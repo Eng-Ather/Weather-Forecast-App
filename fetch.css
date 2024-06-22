@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background\ image.jpg);
+    /* background-color: green ; */
+    /* background-image: url(https://images.squarespace-cdn.com/content/v1/5438e2c6e4b0b18459a8ca06/1614266011116-4IKFYNKB01LRLRWMGDP7/GTJ-2020-1111-24.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading{
+    width: 45%;
+    background-color: rgba(176, 224, 230, 0.5);
+    backdrop-filter: blur(10px);
+    /* color: yellow; */
+    color: yellow;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 5px;
+}
+
+#city_name_drope_down{
+    width: 45%;
+    height:30px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(176, 224, 230, 0.5);
+    backdrop-filter: blur(10px);
+    /* color: yellow; */
+    color: yellow;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+option{
+    background-color: rgba(176, 224, 230, 0.3);
+    backdrop-filter: blur(10px);
+    /* text-shadow: 1px 1px 1px black; */
+    color: rgb(139, 139, 91);
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+
+#parent_box{
+    display: none;
+    width: 45%;
+}
+
+#display_weather{
+    /* border: 4px double yellow; */
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(176, 224, 230, 0.6);
+    backdrop-filter: blur(10px);
+    color: yellow;
+    text-shadow: 1px 1px 1px black;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    
+}
+
+@media only screen and (max-width : 725px){
+
+    #heading{width: 65%;}
+
+    #city_name_drope_down{width: 65%;}
+
+    #parent_box{
+        /* display: none; */
+        width: 65%;
+    }
+    
+    #display_weather{ width: 100%;}
+}
+
+@media only screen and (max-width : 520px){
+
+    #heading{width: 85%;}
+
+    #city_name_drope_down{width: 85%;}
+
+    #parent_box{
+        /* display: none; */
+        width: 85%;
+    }
+    
+    #display_weather{ width: 100%;}
+}
+
+
+@media only screen and (max-width : 390px){
+
+    #heading{width: 95%; font-size: 25px; color: rgb(160, 70, 70);}
+
+    #city_name_drope_down{width: 95%; font-weight: normal; color: rgb(160, 70, 70);}
+
+    #parent_box{
+        /* display: none; */
+        width: 95%;
+    }
+    
+    #display_weather{ width: 100%; color: rgb(160, 70, 70);}
+
+    #date{
+        font-size: 16px;
+    }
+
+    #country_name{
+        font-size: 18px;
+    }
+}
